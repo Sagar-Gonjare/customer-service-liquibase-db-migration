@@ -1,7 +1,5 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
-<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 	<changeSet author="Sagar Gonjare" id="20220717">
 		<insert schemaName="customer_audit" tableName="department">
 			<column name="id" value="1" />
@@ -9,5 +7,21 @@
 			<column name="emp_id" value="3" />
 		</insert>
 	</changeSet>
-	
+
+	<changeSet author="Sagar Gonjare" id="20222404-1">
+		<insert schemaName="customer_audit" tableName="department">
+			<column name="id" value="4" />
+			<column name="dept" value="5" />
+			<column name="emp_id" value="6" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="Sagar Gonjare" id="20222404-1">
+		<insert schemaName="customer_audit" tableName="department">
+			<column name="id" value="7" />
+			<column name="dept" value="8" />
+			<column name="emp_id" value="9" />
+		</insert>
+	</changeSet>
+
 </databaseChangeLog>
